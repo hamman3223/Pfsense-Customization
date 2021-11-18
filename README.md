@@ -37,16 +37,13 @@ https://drive.google.com/drive/folders/1P1TiIz5qcrqkG5ZNhJNShbIdj6qIfbmr?usp=sha
 ### Готовая реализация в src_code
 Можно раскомментировать следующие строки для реализации: 
 В которых присутствуют переменные [$country_region, $country, $region], где $country - массив содержащий значения для $country и $region
-
 1. 196: https://github.com/YWxtYXoK/Pfsense-Customization/blob/5952dd5e1964d5eb556e38ee317e9b0e36f548d0/src_code/index.php#L196
 2. 275: https://github.com/YWxtYXoK/Pfsense-Customization/blob/5952dd5e1964d5eb556e38ee317e9b0e36f548d0/src_code/index.php#L275
 
 Нужно создать столбец в базе данных, обязательно нужно указать тип значения:
-
 1. 1799: https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L1799
 
 И записать их () в базу данных, добавив их в следующие строки
-
 1. 2634: https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2634 
 2. 2636: https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2636 
 
