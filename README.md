@@ -36,6 +36,9 @@ https://drive.google.com/drive/folders/1P1TiIz5qcrqkG5ZNhJNShbIdj6qIfbmr?usp=sha
 
 Данный кусок кода необходимо добавить в captiveportal.inc файл, и провести инициализацию переменной в index.php ( $geo = getLocationInfoByIp($clientip) ). 
 После чего необходимо будет толкнуть данную переменную в базу данных, то есть повторить цикл действий, которые были проделаны с $agent в файлах index.php (функция portal_allow(), инициализацию мы уже совершили), captiveportal.inc и statuscaptiveportal.php
+
+Переменная $clienip инициализируется в файле index.php https://github.com/pfsense/pfsense/blob/a5fd794bc0f9213a36606c98dafb8835ae2687c7/src/usr/local/captiveportal/index.php#L68
+
 <pre><code>
 function getLocationInfoByIp($clientip){
     $ip_data = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$clientip));
