@@ -37,15 +37,18 @@ https://drive.google.com/drive/folders/1P1TiIz5qcrqkG5ZNhJNShbIdj6qIfbmr?usp=sha
 ### Готовая реализация в src_code
 Можно раскомментировать следующие строки для реализации: 
 В которых присутствуют переменные [$country_region, $country, $region], где $country - массив содержащий значения для $country и $region
-196: https://github.com/YWxtYXoK/Pfsense-Customization/blob/5952dd5e1964d5eb556e38ee317e9b0e36f548d0/src_code/index.php#L196
-275: https://github.com/YWxtYXoK/Pfsense-Customization/blob/5952dd5e1964d5eb556e38ee317e9b0e36f548d0/src_code/index.php#L275
+
+1. 196: https://github.com/YWxtYXoK/Pfsense-Customization/blob/5952dd5e1964d5eb556e38ee317e9b0e36f548d0/src_code/index.php#L196
+2. 275: https://github.com/YWxtYXoK/Pfsense-Customization/blob/5952dd5e1964d5eb556e38ee317e9b0e36f548d0/src_code/index.php#L275
 
 Нужно создать столбец в базе данных, обязательно нужно указать тип значения:
-1799: https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L1799
+
+1. 1799: https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L1799
 
 И записать их () в базу данных, добавив их в следующие строки
-2634: https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2634 
-2636: https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2636 
+
+1. 2634: https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2634 
+2. 2636: https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2636 
 
 ### Концепция, которую можно реализовать
 
@@ -53,7 +56,7 @@ https://drive.google.com/drive/folders/1P1TiIz5qcrqkG5ZNhJNShbIdj6qIfbmr?usp=sha
 После чего необходимо будет толкнуть данную переменную в базу данных, то есть повторить цикл действий, которые были проделаны с $agent в файлах index.php (функция portal_allow(), инициализацию мы уже совершили), captiveportal.inc и statuscaptiveportal.php
 
 Переменная $clienip инициализируется в файле index.php 
-68: https://github.com/pfsense/pfsense/blob/a5fd794bc0f9213a36606c98dafb8835ae2687c7/src/usr/local/captiveportal/index.php#L68
+1. 68: https://github.com/pfsense/pfsense/blob/a5fd794bc0f9213a36606c98dafb8835ae2687c7/src/usr/local/captiveportal/index.php#L68
 
 <pre><code>
 function getLocationInfoByIp($clientip){
