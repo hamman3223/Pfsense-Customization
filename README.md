@@ -32,7 +32,10 @@ https://drive.google.com/drive/folders/1P1TiIz5qcrqkG5ZNhJNShbIdj6qIfbmr?usp=sha
 
 Существует два варианта реализации сбора информации о гео-локации пользователя: 
 
-Backend реализация:
+### Backend реализация:
+
+Данный кусок кода необходимо добавить в captiveportal.inc файл, и провести инициализацию переменной в index.php ( $geo = getLocationInfoByIp($clientip) ). 
+После чего необходимо будет толкнуть данную переменную в базу данных, то есть повторить цикл действий, которые были проделаны с $agent в файлах index.php и statuscaptiveportal.php
 <pre><code>
 function getLocationInfoByIp($clientip){
     $ip_data = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$clientip));
@@ -43,5 +46,6 @@ function getLocationInfoByIp($clientip){
     return $result
 }
 </code></pre>
+
 
 
