@@ -44,8 +44,8 @@ https://github.com/YWxtYXoK/Pfsense-Customization/blob/5952dd5e1964d5eb556e38ee3
 https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L1799
 
 И записать их () в базу данных, добавив их в следующие строки
-https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2634
-https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2636
+https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2634 \r\n
+https://github.com/YWxtYXoK/Pfsense-Customization/blame/main/src_code/captiveportal.inc#L2636 \r\n
 
 ### Концепция, которую можно реализовать
 
