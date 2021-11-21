@@ -55,7 +55,7 @@ https://drive.google.com/drive/folders/1P1TiIz5qcrqkG5ZNhJNShbIdj6qIfbmr?usp=sha
 Переменная $clienip инициализируется в файле index.php 
 1. 68: https://github.com/pfsense/pfsense/blob/a5fd794bc0f9213a36606c98dafb8835ae2687c7/src/usr/local/captiveportal/index.php#L68
 
-<pre><code>
+```php
 function getLocationInfoByIp($clientip){
     $ip_data = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=".$clientip));
     if($ip_data && $ip_data->geoplugin_countryName != null){
@@ -64,11 +64,11 @@ function getLocationInfoByIp($clientip){
     }
     return $result
 }
-</code></pre>
+```
 
 ### Frontend реализация:
 
-<pre><code>
+```php
 var options = {
   enableHighAccuracy: true,
   timeout: 5000,
@@ -84,4 +84,4 @@ function error(err) {
 };
 
 navigator.geolocation.getCurrentPosition(success, error, options);
-</code></pre>
+```
